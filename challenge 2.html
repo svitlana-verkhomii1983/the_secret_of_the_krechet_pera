@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Secret of Pera Krecheta. Quest №2</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Time-space Tunnel № 2</h1>
+      <p>
+        Well done!<br />
+        Granite is the most common rock in the continental Earth's crust.<br />
+        You have completed the first task and received the first ray of power -
+        the power of the Earth.
+        <br />Now you are in a new world. Namely - in the world of the Goddess
+        of Water, Vodelia Silva.
+      </p>
+    </header>
+
+    <section class="intro">
+      <div class="intro-img">
+        <img src="image/water_girl.jpg" alt="Богиня Води" />
+      </div>
+
+      <div class="intro-text">
+        <p>The Secret of the Flowing World</p>
+
+        <p>
+          In an underwater temple, among the whisper of waves and the songs of
+          rain, Vodelia Silva lives - the mysterious Goddess of Water.<br />
+          Water flows through the centuries, washing souls and healing wounds.
+          Her touch is cold and gentle, and her presence is omnipresent, like
+          rivers, seas, and mists.<br />
+          Aquarius knows that water can be gentle, but also unstoppable.<br />
+          Only the one who can solve her question will receive a drop of her
+          power - the power of fluidity, wisdom, and renewal. And with it, the
+          key to the next dimension. Head towards the combination of the forces
+          of the four elements! You are very close!
+        </p>
+      </div>
+    </section>
+
+    <div class="description-text">
+      <p>
+        "I am fluidity and life, I awaken rivers and dissolve rocks...<br />
+        To go further, remember: in what forms do I come to your world most
+        often?<br />
+        Be careful, my nature is deceptive..."<br />
+        💧 In what state is water most often found in nature?
+      </p>
+    </div>
+
+    <section class="question-block">
+      <div class="answers">
+        <a
+          href="#"
+          onclick="event.preventDefault(); document.getElementById('rightSound').play(); setTimeout(function(){ window.location.href='challenge3.html'; }, 5000);"
+        >
+          <div class="answer">Liquid</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Solid (ice)</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Gasic</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Plasma</div>
+        </a>
+
+        <audio id="rightSound" src="sounds/correct.mp3" preload="auto"></audio>
+        <audio id="wrongSound" src="sounds/wrong.mp3" preload="auto"></audio>
+      </div>
+
+      <div class="intro-img">
+        <img src="image/symbols_chel1.jpg" alt="Фото води" />
+      </div>
+    </section>
+
+    <div class="back-arrow">
+      <a href="index.html" class="back-button">Return to the main page</a>
+    </div>
+
+    <footer>@ Site for Fantasy Hackathon Logic</footer>
+  </body>
+</html>

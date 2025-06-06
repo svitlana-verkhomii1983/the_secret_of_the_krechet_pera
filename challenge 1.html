@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Secret of Pera Krecheta. Quest №1</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Time-Space Tunnel № 1</h1>
+      <p>
+        So, you're on your way!<br />
+        In this world, you'll meet the Goddess of the Earth - Nedrianna Mirra.
+        <br />This is your first test. <br />We believe in you! Good luck!
+      </p>
+    </header>
+
+    <section class="intro">
+      <div class="intro-img">
+        <img src="image/earth_girl.jpg" alt="Богиня Землі" />
+      </div>
+
+      <div class="intro-text">
+        <p>The Call of the Stone Heart</p>
+        <p>
+          From the depths of the oldest world, covered in moss and roots,
+          Nedrianna Mirra rises - the Goddess of the Earth. <br />
+          Her gaze is as deep as rocks, and her voice is like the roar of
+          ancient caves. She preserves memories of the birth of mountains and
+          the sprouting of the first leaf. Her strength is stability, power and
+          endurance.<br />Nedrianna Mirra tests not the strength of her hands,
+          but the depth of understanding of what gives life to everything.
+          <br />
+          To receive a share of her power, complete the task she has prepared.
+          The correct answer will allow you to take the crystal of earthly
+          wisdom and move further - towards a new element.<br />
+        </p>
+      </div>
+    </section>
+
+    <div class="description-text">
+      <p>
+        "Stop and listen to the rustle of the mountains and the whisper of the
+        roots…<br />
+        Only those who remember what the world under their feet is made of will
+        be able to take the next step.<br />
+        Find the answer in the depths of your memory…<br />
+        🌿 "What mineral is the main component of the earth's crust?"
+      </p>
+    </div>
+
+    <section class="question-block">
+      <div class="answers">
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Salt</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Limestone</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="event.preventDefault(); document.getElementById('rightSound').play(); setTimeout(function(){ window.location.href='challenge2.html'; }, 5000);"
+        >
+          <div class="answer">Granite</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Diamond</div>
+        </a>
+
+        <audio id="rightSound" src="sounds/correct.mp3" preload="auto"></audio>
+        <audio id="wrongSound" src="sounds/wrong.mp3" preload="auto"></audio>
+      </div>
+
+      <div class="intro-img">
+        <img src="image/fantasy.jpg" alt="Летючі острови" />
+      </div>
+    </section>
+
+    <div class="back-arrow">
+      <a href="index.html" class="back-button">Return to the main page</a>
+    </div>
+
+    <footer>@ Site for Fantasy Hackathon Logic</footer>
+  </body>
+</html>

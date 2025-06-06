@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Secret of the Feather of the Cretaceous. Quest №4</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Time-space Tunnel № 4</h1>
+      <p>
+        That's right, without oxygen, combustion is impossible - it is he who
+        "feeds" the flame.<br />
+        Here is the last tunnel! The last test!<br />
+        I am proud of you, my friend!<br />
+        The world of the Goddess of the Wind, Vitrelia Bollei, greets you.
+      </p>
+    </header>
+
+    <section class="intro">
+      <div class="intro-img">
+        <img src="image/air_girl.jpg" alt="Богиня Вітру" />
+      </div>
+
+      <div class="intro-text">
+        <p>Whisper of the Invisible Air</p>
+        <p>
+          Vitrelia Bollei - the Goddess of the Wind - soars between the clouds
+          and the stars. <br />She is weightless like a breath, and fast like a
+          thought. Her laughter can be heard in the rustle of leaves, and her
+          step - in the gust of wind. She controls knowledge, change and
+          intuition. <br />Those who meet her feel lightness, but also
+          responsibility. <br />
+          Complete her task to obtain the feather of heavenly truth - a particle
+          of the element that has no limits. And combine the four elemental
+          powers to restore the magical Feather of Krechet! Good luck!
+        </p>
+      </div>
+    </section>
+
+    <div class="description-text">
+      <p>
+        "I am the breath of heaven, I whisper to the trees and raise my
+        wings…<br />
+        Feel what makes me move, what gives birth to my power.<br />
+        Only he who understands the source of my existence is worthy to go
+        further…<br />
+        🌬️ What is the main reason for the formation of wind?
+      </p>
+    </div>
+
+    <section class="question-block">
+      <div class="answers">
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Evaporation of water</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="event.preventDefault(); document.getElementById('rightSound').play(); setTimeout(function(){ window.location.href='final.html'; }, 5000);"
+        >
+          <div class="answer">Difference in air temperatures</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Gravity of the Moon</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Rotation of the Earth</div>
+        </a>
+
+        <audio id="rightSound" src="sounds/correct.mp3" preload="auto"></audio>
+        <audio id="wrongSound" src="sounds/wrong.mp3" preload="auto"></audio>
+      </div>
+
+      <div class="intro-img">
+        <img
+          src="image/wind1.jpg"
+          alt="Стіна з символами із завдання першого"
+        />
+      </div>
+    </section>
+
+    <div class="back-arrow">
+      <a href="index.html" class="back-button">Return to the main page</a>
+    </div>
+
+    <footer>@ Site for Fantasy Hackathon Logic</footer>
+  </body>
+</html>

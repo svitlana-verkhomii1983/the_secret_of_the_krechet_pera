@@ -1,0 +1,344 @@
+/*MAIN PAGE*/
+
+/* Общий стиль страницы */
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: "Georgia", serif;
+  color: white;
+  scroll-behavior: smooth;
+  background-image: url("../image/other_sky.jpg"); /* путь к твоему изображению */
+  background-size: cover; /* картинка растягивается на весь экран */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* фон не прокручивается */
+}
+
+/* Заголовок на фоне */
+.header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #f8efe8;
+  text-shadow: 2px 2px 10px rgb(243, 130, 37);
+  animation: fadeIn 2s ease-in;
+  order: 1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Видео блок */
+.video-section video,
+.video-section3 video {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+}
+
+.video-section3 video {
+  width: 100%;
+  height: 150vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Приветственный блок */
+.intro,
+.question-block,
+.final {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+/* Текст слева */
+.intro-text,
+.description-text,
+.trial-text,
+.greeting-text,
+.begin-text,
+.answers,
+.final-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 5rem auto;
+}
+
+.header p,
+.greeting-text p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 5rem auto;
+  color: #f8efe8;
+  text-shadow: 2px 2px 10px rgb(243, 130, 37);
+  animation: fadeIn 2s ease-in;
+  order: 1;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description-text,
+.trial-text,
+.greeting-text,
+.begin-text {
+  text-align: center;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: white;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  background-color: #706d6d4d;
+  background-color: none;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 0 20px orange;
+  border-color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.answer:hover {
+  background-color: gold;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* Картинка справа */
+.intro-img {
+  flex: 1;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.intro-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+.video-section2 video {
+  width: 1200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-section4 video {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Кнопка */
+.start-button,
+.back-button {
+  display: inline-block;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: none;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 0 20px orange;
+  border-color: orange;
+}
+
+.start-button:hover,
+.back-button:hover {
+  color: white;
+  background-color: none;
+  transform: scale(1.12);
+  box-shadow: 0 0 40px orange;
+  border-color: orange;
+}
+
+footer {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  font-style: italic;
+  margin: 2rem auto;
+}
+
+/*CHALLENGE 1, 2, 3, 4*/
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Georgia", serif;
+}
+
+.header {
+  background-size: cover;
+  text-align: center;
+  padding: 40px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.quest-block {
+  padding: 40px;
+  text-align: center;
+}
+
+.quest-text {
+  opacity: 100%;
+  transition: opacity 2s ease-in;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+.quest-text.visible {
+  opacity: 100%;
+}
+
+.answer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 1s ease;
+}
+
+.btn.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 15px gold;
+}
+
+.back-arrow {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.back-arrow img {
+  width: 40px;
+  animation: floatArrow 2s ease-in-out infinite alternate;
+}
+
+@keyframes floatArrow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+.credits {
+  position: relative;
+  height: 280px; /* можна більше, якщо треба довші титри */
+  overflow: hidden;
+  background: none;
+  color: white;
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 20px orange;
+  border-color: orange;
+}
+
+.credits-content {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  text-align: center;
+  animation: scrollUp 30s linear infinite;
+}
+
+@keyframes scrollUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 100%;
+  }
+}

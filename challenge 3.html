@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Secret of Per Krechet. Quest №3</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Time-space Tunnel № 3</h1>
+      <p>
+        This is incredible!<br />
+        You are moving so fast! You have already solved the second riddle.<br />ndeed,
+        liquid water is the main form on Earth: rivers, lakes, oceans.<br />
+        So, now you have two elements of power - Earth and Water. A new world
+        before you, my friend!<br />
+        This is the world of the Goddess of Fire, Palanna Ardent.
+      </p>
+    </header>
+
+    <section class="intro">
+      <div class="intro-img">
+        <img src="image/fire_girl.png" alt="Богиня Вогню" />
+      </div>
+
+      <div class="intro-text">
+        <p>Fiery Message of the Ancestors</p>
+        <p>
+          Among the flaming dunes and volcanic radiance lives Palanna Ardent -
+          the Goddess of Fire. <br />Her heart burns with passion for life, and
+          her eyes are like embers that illuminate the path in the darkness. She
+          gives warmth, strength, inspiration, but requires caution. <br />Fire
+          is creativity and destruction, and only the chosen ones can use its
+          power.<br />Answer its questions — and if the answer is correct, you
+          will receive a spark of living fire and a pass to the last time-space
+          tunnel.<br />
+          Good luck!
+        </p>
+      </div>
+    </section>
+
+    <div class="description-text">
+      <p>
+        "I am the heat in the heart, I am the flame of the spirit, I am the
+        light in the darkness…<br />
+        But my power is dangerous when you don't know how to control it.<br />
+        Remember what helps me burn, and make your choice wisely…”<br />
+        🔥 Which of the following substances supports combustion?
+      </p>
+    </div>
+
+    <section class="question-block">
+      <div class="answers">
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Hydrogen</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Carbon dioxide</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="document.getElementById('wrongSound').play(); return false;"
+        >
+          <div class="answer">Nitrogen</div>
+        </a>
+
+        <a
+          href="#"
+          onclick="event.preventDefault(); document.getElementById('rightSound').play(); setTimeout(function(){ window.location.href='challenge4.html'; }, 5000);"
+        >
+          <div class="answer">Oxygen</div>
+        </a>
+
+        <audio id="rightSound" src="sounds/correct.mp3" preload="auto"></audio>
+        <audio id="wrongSound" src="sounds/wrong.mp3" preload="auto"></audio>
+      </div>
+
+      <div class="intro-img">
+        <img
+          src="image/symbols_chal1_2.jpg"
+          alt="Стіна з символами із завдання першого"
+        />
+      </div>
+    </section>
+
+    <div class="back-arrow">
+      <a href="index.html" class="back-button">Return to the main page</a>
+    </div>
+
+    <footer>@ Site for Fantasy Hackathon Logic</footer>
+  </body>
+</html>
